@@ -1,0 +1,24 @@
+:root {
+  --dark-primary-color: #616161;
+  --default-primary-color: #9E9E9E;
+  --light-primary-color: #F5F5F5;
+  --text-primary-color: #212121;
+  --accent-color: #03A9F4;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #BDBDBD;
+}
+
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: var(--dark-primary-color);
+}
