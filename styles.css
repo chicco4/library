@@ -9,7 +9,7 @@
   --divider-color: #BDBDBD;
 }
 
-/* CSS RESET */
+/* css reset */
 
 *,
 *::before,
@@ -19,6 +19,27 @@
   margin: 0;
 }
 
-.header {
-  background-color: var(--dark-primary-color);
+/* header */
+
+header {
+  background-color: var(--accent-color);
+}
+
+
+
+/* main */
+
+
+
+/* footer */
+
+footer,
+footer a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 1vw;
+  font-size: large;
+  text-decoration: none;
 }
