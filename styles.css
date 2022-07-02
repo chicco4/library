@@ -125,7 +125,7 @@ main {
 }
 
 #read-btn:hover {
-  background-color: var(--light-green);
+  background-color: var(--linen);
 }
 
 #remove-btn {
