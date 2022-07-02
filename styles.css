@@ -4,6 +4,10 @@
   --linen: #f5ebe0ff;
   --champagne-pink: #e3d5caff;
   --desert-sand: #d5bdafff;
+  --light-green: #9fff9c;
+  --light-red: #ff9c9c;
+
+  --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 /* css reset */
@@ -42,8 +46,7 @@ header h1 {
 }
 
 header .log-in-btn {
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding: 5px;
   border-radius: 5%;
   font-size: 28px;
   font-weight: 800;
@@ -51,7 +54,7 @@ header .log-in-btn {
 }
 
 header .log-in-btn:hover {
-  background-color: var(--linen);
+  background-color: var(--isabelline);
 }
 
 /* main */
@@ -60,6 +63,9 @@ main {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
 
   background-color: var(--champagne-pink);
 }
@@ -67,8 +73,8 @@ main {
 .btn-container {
   display: flex;
   justify-content: center;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #add-book {
@@ -80,23 +86,59 @@ main {
 }
 
 #add-book:hover {
-  background-color: var(--linen);
+  background-color: var(--isabelline);
 }
 
 /* BOOKS GRID */
 
 .books-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 5%;
-  padding-right: 5%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .book-card {
-
-  background-color: var(--isabelline);
+  background-color: var(--linen);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+  gap: 5px;
+  border-radius: 5%;
+  box-shadow: var(--shadow);
+  padding: 2.5%;
 }
 
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 5%;
+}
+
+#read-btn {
+  padding: 1%;
+  background-color: inherit;
+  font-size: 22px;
+  border-radius: 5%;
+  background-color: var(--light-green);
+}
+
+#read-btn:hover {
+  background-color: var(--light-green);
+}
+
+#remove-btn {
+  padding: 1%;
+  background-color: inherit;
+  font-size: 22px;
+  border-radius: 5%;
+  background-color: var(--pale-silver);
+}
+
+#remove-btn:hover {
+  background-color: var(--linen);
+}
 
 /* footer */
 
@@ -106,7 +148,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1vw;
-
+  font-size: large;
   height: 8vh;
   flex-shrink: 0;
 
@@ -114,6 +156,6 @@ footer {
 }
 
 footer a {
-  font-size: large;
+  font-size: x-large;
   text-decoration: none;
 }
