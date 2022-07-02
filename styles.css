@@ -41,19 +41,19 @@ header {
 }
 
 header h1 {
-  font-size: 46px;
+  font-size: 50px;
   font-weight: 800;
 }
 
-header .log-in-btn {
-  padding: 5px;
+#log-in-btn {
+  padding: 10px;
   border-radius: 5%;
   font-size: 28px;
   font-weight: 800;
   background-color: var(--pale-silver);
 }
 
-header .log-in-btn:hover {
+#log-in-btn:hover {
   background-color: var(--isabelline);
 }
 
@@ -173,6 +173,7 @@ footer a {
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
+
 
 #add-book-form {
   display: flex;
