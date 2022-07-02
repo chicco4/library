@@ -85,34 +85,6 @@
                 </div>
             </div>
 
-            <div class="book-card">
-                <p>la vita è bella</p>
-                <p>gigio</p>
-                <p>21 pages</p>
-                <div class="btn-group">
-                    <button id="read-btn">Not read</button>
-                    <button id="remove-btn">Remove</button>
-                </div>
-            </div>
-            <div class="book-card">
-                <p>la vita è bella</p>
-                <p>gigio</p>
-                <p>21 pages</p>
-                <div class="btn-group">
-                    <button id="read-btn">Not read</button>
-                    <button id="remove-btn">Remove</button>
-                </div>
-            </div>
-            <div class="book-card">
-                <p>la vita è bella</p>
-                <p>gigio</p>
-                <p>21 pages</p>
-                <div class="btn-group">
-                    <button id="read-btn">Not read</button>
-                    <button id="remove-btn">Remove</button>
-                </div>
-            </div>
-
         </div>
 
     </main>
@@ -130,6 +102,25 @@
         </a>
 
     </footer>
+
+
+    <div class="modal">
+
+        <form id="add-book-form">
+
+            <div class="title">Add new book</div>
+            <input type="text" id="title" placeholder="Title" />
+            <input type="text" id="author" placeholder="Author" />
+            <input type="number" id="pages" placeholder="Pages" />
+            <div class="is-read">
+                <label for="is-read">Have you read it?</label>
+                <input class="checkbox" type="checkbox" id="isRead" />
+            </div>
+            <button class="submit-btn" type="submit">Submit</button>
+
+        </form>
+
+    </div>
 
 </body>
 

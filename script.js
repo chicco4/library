@@ -40,5 +40,10 @@ class Library {
 
 const library = new Library()
 
-/* TIME TO MAKE THE SITE WORK*/
+// User Interface
+
+const addBook = document.getElementById('add-book')
+const readBook = document.getElementById('read-btn')
+const removeBook = document.getElementById('remove-btn')
+const modal = document.getElementByClass("modal")
 

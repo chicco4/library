@@ -159,3 +159,29 @@ footer a {
   font-size: x-large;
   text-decoration: none;
 }
+
+/* basic modal */
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#add-book-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--linen);
+  gap: 5px;
+  border-radius: 5%;
+  box-shadow: var(--shadow);
+  align-items: center;
+  font-size: x-large;
+  padding: 5%;
+}
