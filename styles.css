@@ -50,7 +50,7 @@ header .log-in-btn {
   border-radius: 5%;
   font-size: 28px;
   font-weight: 800;
-  background-color: inherit;
+  background-color: var(--pale-silver);
 }
 
 header .log-in-btn:hover {
@@ -81,7 +81,7 @@ main {
   font-size: 26px;
   font-weight: 600;
   padding: 1%;
-  background-color: inherit;
+  background-color: var(--pale-silver);
   border-radius: 5%;
 }
 
