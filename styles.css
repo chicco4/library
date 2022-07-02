@@ -41,7 +41,7 @@ header {
 }
 
 header h1 {
-  font-size: 44px;
+  font-size: 46px;
   font-weight: 800;
 }
 
@@ -78,7 +78,7 @@ main {
 }
 
 #add-book {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
   padding: 1%;
   background-color: inherit;
