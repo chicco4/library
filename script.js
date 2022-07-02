@@ -44,11 +44,10 @@ const library = new Library()
 
 // User Interface
 
-const addBookBtn = document.getElementById("log-in-btn")
+const addBookBtn = document.getElementById("add-book-btn")
 
 addBookBtn.onclick = openAddBookModal
 
 function openAddBookModal() {
     console.log("CIAO")
 }
-
