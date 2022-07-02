@@ -1,12 +1,9 @@
 :root {
-  --dark-primary-color: #616161;
-  --default-primary-color: #9E9E9E;
-  --light-primary-color: #F5F5F5;
-  --text-primary-color: #212121;
-  --accent-color: #03A9F4;
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
-  --divider-color: #BDBDBD;
+  --isabelline: #edede9ff;
+  --pale-silver: #d6ccc2ff;
+  --linen: #f5ebe0ff;
+  --champagne-pink: #e3d5caff;
+  --desert-sand: #d5bdafff;
 }
 
 /* css reset */
@@ -31,14 +28,30 @@ header {
   height: 10vh;
   flex-shrink: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: var(--accent-color);
+  padding-left: 5%;
+  padding-right: 5%;
+
+  background-color: var(--desert-sand);
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 800;
+}
+
+header .log-in-btn {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 5%;
+  font-size: 28px;
+  font-weight: 800;
+  background-color: inherit;
+}
+
+header .log-in-btn:hover {
+  background-color: var(--linen);
 }
 
 /* main */
@@ -47,14 +60,42 @@ main {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+
+  background-color: var(--champagne-pink);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 #add-book {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
-  width: fit-content;
+  padding: 1%;
+  background-color: inherit;
+  border-radius: 5%;
 }
 
+#add-book:hover {
+  background-color: var(--linen);
+}
+
+/* BOOKS GRID */
+
+.books-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.book-card {
+
+  background-color: var(--isabelline);
+}
 
 
 /* footer */
@@ -68,7 +109,8 @@ footer {
 
   height: 8vh;
   flex-shrink: 0;
-  background-color: var(--divider-color);
+
+  background-color: var(--pale-silver);
 }
 
 footer a {
