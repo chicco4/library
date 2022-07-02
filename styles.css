@@ -91,7 +91,7 @@ main {
 
 /* BOOKS GRID */
 
-.books-grid {
+#books-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
@@ -162,7 +162,7 @@ footer a {
 
 /* basic modal */
 
-.modal {
+#modal {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -170,7 +170,7 @@ footer a {
 }
 
 
-.modal.active {
+#modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
 

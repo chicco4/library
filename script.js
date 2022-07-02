@@ -45,9 +45,8 @@ const library = new Library()
 // User Interface
 
 const addBookBtn = document.getElementById("add-book-btn")
+const addBookModal = document.getElementById("modal")
+const overlay = document.getElementById("overlay")
+const addBookForm = document.getElementById("add-book-form")
+const booksGrid = document.getElementById("books-grid")
 
-addBookBtn.onclick = openAddBookModal
-
-function openAddBookModal() {
-    console.log("CIAO")
-}
