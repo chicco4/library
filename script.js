@@ -40,13 +40,45 @@ class Library {
 
 const library = new Library()
 
-
-
 // User Interface
 
 const addBookBtn = document.getElementById("add-book-btn")
-const addBookModal = document.getElementById("modal")
-const overlay = document.getElementById("overlay")
+const modal = document.getElementById("modal")
 const addBookForm = document.getElementById("add-book-form")
 const booksGrid = document.getElementById("books-grid")
 
+////////////////////////////////////////////////////////////
+
+function addBook() {
+
+}
+
+////////////////////////////////////////////////////
+
+const updateBooksGrid = () => {
+    resetBooksGrid()
+    for (let book of library.books) {
+        createBookCard(book)
+    }
+}
+
+const resetBooksGrid = () => {
+    booksGrid.innerHTML = ''
+}
+
+const handleKeyboardInput = (e) => {
+    if (e.key === 'Escape') closeAddBookModal()
+}
+
+const openModal = () => {
+    addBookForm.reset()
+    modal.classList.add("active");
+}
+
+function closeAddBookModal() {
+    modal.classList.remove("active");
+}
+
+addBookBtn.onclick = openModal
+addBookForm.onsubmit = addBook
+window.onkeydown = handleKeyboardInput
