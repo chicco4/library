@@ -116,19 +116,26 @@ main {
   border-radius: 5%;
 }
 
-#read-btn {
+.read-btn {
   padding: 1%;
   background-color: inherit;
   font-size: 22px;
   border-radius: 5%;
+}
+
+.read-btn.green {
   background-color: var(--light-green);
 }
 
-#read-btn:hover {
+.read-btn.red {
+  background-color: var(--light-red);
+}
+
+.read-btn:hover {
   background-color: var(--linen);
 }
 
-#remove-btn {
+.remove-btn {
   padding: 1%;
   background-color: inherit;
   font-size: 22px;
@@ -136,7 +143,7 @@ main {
   background-color: var(--pale-silver);
 }
 
-#remove-btn:hover {
+.remove-btn:hover {
   background-color: var(--linen);
 }
 
